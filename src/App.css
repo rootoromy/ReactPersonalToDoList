@@ -3,3 +3,44 @@ body {
   justify-content: center;
   align-items: center;
 }
+ul li {
+  height: 43px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 20px;
+}
+ul li::before {
+  position: absolute;
+  content: '◯';
+  width: 43px;
+  height: 43px;
+  left: -26px;
+  top: 10px;
+}
+ul span {
+  display: flex;
+  align-items: center;
+}
+button {
+  border: 1px solid grey;
+  padding: 0.3em 1.2em;
+}
+button:first-of-type {
+  margin-left: 1em;
+}
+ul button {
+  margin: 0.2em;
+}
+ul button:first-of-type {
+  margin-left: 1em;
+}
+.inputWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
